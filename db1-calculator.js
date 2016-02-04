@@ -7,9 +7,9 @@ calculaDiferenca = function(horaA, horaB) {
 
 function PontoBase() {
     this.diaBase = "2011-01-01 ";
-    this.jornadaExtra = "08:58:00";
-    this.jornadaNormal = "08:48:00";
-    this.jornadaMinima = "08:38:00";
+    this.jornadaExtra = "08:10:00";
+    this.jornadaNormal = "08:00:00";
+    this.jornadaMinima = "07:50:00";
     this.horasTrabalhadas = {};
 
     this.setHorasTrabalhadas = function(horas) {
@@ -55,7 +55,7 @@ function PontoHoje(p1, p2, p3, p4, p5, p6) {
     this.p4 = p4;
     this.p5 = p5;
     this.p6 = p6;
-    this.jornadaMinimaTotalSegundos = 31680;
+    this.jornadaMinimaTotalSegundos = 28800;
     this.existePrevisao = false;
     this.periodoTrabalhadoManha = "";
 
@@ -297,6 +297,6 @@ if($(".tabExterna").length) {
 }   
 
 $('#login').submit(function() {
-    localStorage.setItem("tempUser", $('[name="login:login"]').val().toLowerCase());
+    localStorage.setItem("tempUser", $('[name="login:login"]').val());
     return true;
 });
