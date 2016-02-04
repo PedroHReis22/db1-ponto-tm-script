@@ -10,5 +10,5 @@
 // ==/UserScript==
 
 $.getScript( "http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js" ).done(function() {
-    $.getScript("https://raw.githack.com/PedroHReis22/db1-ponto-tm-script/master/db1-calculator.js");
+    $.getScript("https://cdn.rawgit.com/PedroHReis22/db1-ponto-tm-script/master/db1-calculator.js");
 });
