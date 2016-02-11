@@ -294,7 +294,9 @@ if($(".tabExterna").length) {
         });
     }
 
-}   
+}
+
+setTimeout(refresh, 1000 * 60 * 5);
 
 $('#login').submit(function() {
     localStorage.setItem("tempUser", $('[name="login:login"]').val());
